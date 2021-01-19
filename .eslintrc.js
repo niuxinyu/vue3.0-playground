@@ -14,12 +14,14 @@ module.exports = {
         'space-before-function-paren': 2, //
         'eol-last': 'error', // 要求文件末尾保留一行空行
         'brace-style': ['error', 'stroustrup'], // if else 等语句的换行规则 报错 必须换行,
-        'camelcase': 0,
-        // 允许在ts内使用var和require
-        '@typescript-eslint/no-var-requires': 0,
-        '@typescript-eslint/ban-ts-ignore': 0,
-        '@typescript-eslint/camelcase': 0,
-        '@typescript-eslint/no-explicit-any': 0
+        'camelcase': 0, // 非必须驼峰
+        'no-unused-vars': 0, // 允许声明不使用
+        // ts
+        '@typescript-eslint/no-var-requires': 0, // 允许在ts内使用var和require 
+        '@typescript-eslint/ban-ts-ignore': 0, // 允许 @ts-ignore
+        '@typescript-eslint/camelcase': 0, // 非必须驼峰
+        '@typescript-eslint/no-explicit-any': 0, // 允许any
+        '@typescript-eslint/no-unused-vars': 0, // 允许声明不使用 主要是 setup script 内的函数即使在模板中使用了，依旧会报定义未使用的错误 
     },
     env: {
         node: true
