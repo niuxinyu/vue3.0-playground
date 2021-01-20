@@ -8,7 +8,12 @@
     <!-- <shallow-ref></shallow-ref> -->
     <!-- <trigger-ref></trigger-ref> -->
     <!-- <Computed></Computed> -->
-    <watch></watch>
+    <!-- <watch></watch> -->
+    <!-- <on-before-route-leave></on-before-route-leave> -->
+    <!-- <router-view></router-view> -->
+    <!-- <use-store></use-store> -->
+    <!-- <functional-com></functional-com> -->
+    <proxy></proxy>
   </div>
 </template>
 
@@ -24,7 +29,11 @@
 // import ShallowRef from './views/shallowRef.vue';
 // import TriggerRef from "./views/triggerRef.vue";
 // import Computed from "./views/computed.vue";
-import Watch from './views/watch.vue';
+// import Watch from './views/watch.vue';
+// import OnBeforeRouteLeave from './views/onBeforeRouteLeave.vue';
+// import UseStore from './views/useStore.vue';
+// import FunctionalCom from './views/functionalcom.vue';
+import Proxy from './views/proxy.vue';
 </script>
 
 <style lang="less">
