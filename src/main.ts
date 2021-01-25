@@ -6,9 +6,9 @@ import store from './store';
 
 const app = createApp(App);
 
-app.config.errorHandler = (err, vm, info) => {
-    console.log(err, vm, info);
-};
+// app.config.errorHandler = (err, vm, info) => {
+//     console.log(err, vm, info);
+// };
 
 app
     .use(store)
