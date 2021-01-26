@@ -1,9 +1,10 @@
 <template>
-  <template v-if="otherS <= 25">
+  <template v-if="s <= 25">
     <dot
         :x="x - (25 / 2)"
         :y="y - (25 / 2)"
         :size="25"
+        :text="seconds"
     ></dot>
   </template>
   <template v-else>
@@ -11,18 +12,21 @@
         :x="x"
         :y="y - (otherS / 2)"
         :s="otherS"
+        :seconds="seconds"
     >
     </triangle>
     <triangle
         :x="x - otherS"
         :y="y + (otherS / 2)"
         :s="otherS"
+        :seconds="seconds"
     >
     </triangle>
     <triangle
         :x="x + otherS"
         :y="y + (otherS / 2)"
         :s="otherS"
+        :seconds="seconds"
     >
     </triangle>
   </template>
@@ -41,7 +45,8 @@ export default defineComponent({
     s: Number,
     x: Number,
     y: Number,
-    size: Number
+    size: Number,
+    seconds: Number
   },
   setup (props: any) {
     const otherS = ref(props.s);

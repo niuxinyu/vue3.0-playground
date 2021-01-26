@@ -1,18 +1,37 @@
 <template>
-  <div :style="getStyle()">0</div>
+  <div :style="getStyle()">{{text}}</div>
 </template>
 
 <script lang="ts">
+interface Props {
+  size: number;
+  x: number;
+  y: number;
+  text: number;
+}
 import { defineComponent, toRefs } from 'vue';
 
 export default defineComponent({
   name: "dot",
   props: {
-    size: Number,
-    x: Number,
-    y: Number
+    size: {
+      type: Number,
+      default: 0
+    },
+    x: {
+      type: Number,
+      default: 0
+    },
+    y: {
+      type: Number,
+      default: 0
+    },
+    text: {
+      type: Number,
+      default: 0
+    }
   },
-  setup (props: { size: number }) {
+  setup (props: Props) {
     const { size, x, y } = toRefs(props);
     const dotStyle = {
       position: 'absolute',

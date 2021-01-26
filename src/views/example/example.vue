@@ -1,6 +1,6 @@
 <template>
   <div :style="getStyle()">
-    <triangle :x="0" :y="0" :s="1000"></triangle>
+    <triangle :x="0" :y="0" :s="1000" :seconds="seconds.seconds"></triangle>
   </div>
 </template>
 
@@ -14,15 +14,17 @@ export default defineComponent({
     triangle
   },
   props: {
-    elapsed: Number
+    elapsed: {
+      type: Number,
+      default: 0
+    }
   },
   setup (props: { elapsed: number }) {
-    let transform;
+    let transform: string;
     watchEffect(() => {
       const { elapsed } = toRefs(props);
       const t = (elapsed.value / 1000) % 10;
       const scale = 1 + (t > 5 ? 10 - t : t) / 10;
-      console.log(scale);
       transform = 'scaleX(' + (scale / 2.1) + ') scaleY(0.7) translateZ(0.1px)';
     });
     const seconds = reactive({
@@ -51,7 +53,8 @@ export default defineComponent({
     });
 
     return {
-      getStyle
+      getStyle,
+      seconds
     };
   }
 });

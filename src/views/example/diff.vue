@@ -27,6 +27,7 @@ export default defineComponent({
   },
   mounted () {
     requestAnimationFrame(this.getTime);
+    // setInterval(this.getTime, 16);
   }
 });
 </script>
