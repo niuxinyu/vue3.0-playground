@@ -7,7 +7,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   name: "setup",
   setup () {
-    console.log('---------setup------------');
+    console.log('---------compositionApi------------');
   },
   beforeCreate () {
     console.log('---------beforeCreate------------');

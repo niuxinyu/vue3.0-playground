@@ -1,13 +1,11 @@
 <template>
-  <div></div>
+  <div>
+    <h1>{{ count }}</h1>
+  </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: "setup-script"
-});
+<script lang="ts" setup>
+const count = 0;
 </script>
 
 <style scoped>

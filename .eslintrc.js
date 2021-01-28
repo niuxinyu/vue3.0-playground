@@ -17,11 +17,11 @@ module.exports = {
         'camelcase': 0, // 非必须驼峰
         'no-unused-vars': 0, // 允许声明不使用
         // ts
-        '@typescript-eslint/no-var-requires': 0, // 允许在ts内使用var和require 
+        '@typescript-eslint/no-var-requires': 0, // 允许在ts内使用var和require
         '@typescript-eslint/ban-ts-ignore': 0, // 允许 @ts-ignore
         '@typescript-eslint/camelcase': 0, // 非必须驼峰
         '@typescript-eslint/no-explicit-any': 0, // 允许any
-        '@typescript-eslint/no-unused-vars': 0, // 允许声明不使用 主要是 setup script 内的函数即使在模板中使用了，依旧会报定义未使用的错误 
+        '@typescript-eslint/no-unused-vars': 0, // 允许声明不使用 主要是 compositionApi script 内的函数即使在模板中使用了，依旧会报定义未使用的错误
     },
     env: {
         node: true

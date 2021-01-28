@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref, SetupContext } from 'vue';
+import { defineComponent } from 'vue';
 import example from "@/views/example/example.vue";
 
 export default defineComponent({
