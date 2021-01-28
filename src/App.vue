@@ -1,10 +1,13 @@
 <template>
   <div>
-    <!--     <set-up></set-up>-->
-<!--    <LifeCycle/>-->
-<!--    <SetupScript/>-->
-<!--    <reactive/>-->
-    <readonly/>
+  <!-- <set-up></set-up> -->
+   <!-- <LifeCycle/> -->
+   <!-- <SetupScript/> -->
+   <!-- <reactive/> -->
+    <!-- <readonly/> -->
+    <!-- <is-proxy></is-proxy> -->
+    <!-- <is-reactive></is-reactive> -->
+    <to-raw></to-raw>
   </div>
 </template>
 
@@ -19,7 +22,10 @@
 // import LifeCycle from './views/compositionApi/lifeCycle.vue';
 // import SetupScript from './views/compositionApi/setup-script.vue';
 // import reactive from "@/views/reactivityApi/reactive.vue";
-import readonly from "@/views/reactivityApi/readonly.vue";
+// import readonly from "@/views/reactivityApi/readonly.vue";
+// import isProxy from '@/views/reactivityApi/isProxy.vue';
+// import isReactive from '@/views/reactivityApi/isReactive.vue';
+import toRaw from '@/views/reactivityApi/toRaw.vue';
 
 // import diff from "@/views/example/diff.vue";
 </script>
